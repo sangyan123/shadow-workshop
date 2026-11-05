@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "level_id": "L01",
+  "title": "第一盏影子",
+  "description": "拖动三角物件，让它的影子盖住浅色目标轮廓。",
+  "board": {
+    "width": 1.0,
+    "height": 1.0,
+    "sample_resolution": 128
+  },
+  "light_presets": [
+    {
+      "id": "center",
+      "position": [0.50, 0.15],
+      "height": 3.0
+    }
+  ],
+  "active_light_preset": "center",
+  "light_moves_count": true,
+  "target_shapes": [
+    [
+      [0.26, 0.906],
+      [0.50, 0.906],
+      [0.38, 0.714]
+    ]
+  ],
+  "objects": [
+    {
+      "id": "triangle_01",
+      "shape": [
+        [-0.10, 0.08],
+        [0.10, 0.08],
+        [0.00, -0.08]
+      ],
+      "height": 0.5,
+      "position": [0.66, 0.42],
+      "rotation_deg": 0,
+      "movable": true,
+      "rotatable": false
+    }
+  ],
+  "par_moves": 1,
+  "win_threshold": {
+    "precision": 0.90,
+    "recall": 0.92
+  },
+  "hints": [
+    "目标轮廓是一个三角形。",
+    "把桌上的三角形拖到左下方试试。"
+  ]
+}
