@@ -2,3 +2,13 @@
 *.tmp
 .DS_Store
 Thumbs.db
+
+# 导出产物
+build/
+*.apk
+*.aab
+*.idsig
+
+# 临时文件
+_templates.tpz
+_speedtest.bin
