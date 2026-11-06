@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "level_id": "L08",
+  "chapter_id": "CH02",
+  "title": "换一盏灯",
+  "description": "影子小了。试试换个灯位，光从侧面照过来。",
+  "board": {
+    "width": 1.0,
+    "height": 1.0,
+    "sample_resolution": 128
+  },
+  "light_presets": [
+    {
+      "id": "center",
+      "position": [0.50, 0.15],
+      "height": 3.0
+    },
+    {
+      "id": "side",
+      "position": [0.18, 0.62],
+      "height": 1.4
+    }
+  ],
+  "active_light_preset": "center",
+  "light_moves_count": true,
+  "target_shapes": [
+    [
+      [0.282222, 0.624444],
+      [0.717778, 0.624444],
+      [0.717778, 0.375556]
+    ]
+  ],
+  "objects": [
+    {
+      "id": "tri_08",
+      "shape": [
+        [-0.14, 0.08],
+        [0.14, 0.08],
+        [0.14, -0.08]
+      ],
+      "height": 0.5,
+      "position": [0.45, 0.55],
+      "rotation_deg": 0,
+      "movable": true,
+      "rotatable": false
+    }
+  ],
+  "par_moves": 2,
+  "golden_solution": {
+    "light_preset": "side",
+    "objects": [
+      {
+        "id": "tri_08",
+        "position": [0.385714, 0.542857],
+        "rotation_deg": 0
+      }
+    ]
+  },
+  "win_threshold": {
+    "precision": 0.90,
+    "recall": 0.92,
+    "edge_tolerance": 4.5,
+    "snap_distance": 8.0
+  },
+  "hints": [
+    "先点「切换灯位」，让光从侧面照过来。",
+    "灯换了之后影子会变大，再拖位置。"
+  ]
+}

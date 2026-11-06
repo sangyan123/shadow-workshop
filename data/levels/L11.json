@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "level_id": "L11",
+  "chapter_id": "CH02",
+  "title": "钉住的那块",
+  "description": "有一块是固定的，拖不动。只能围着它摆另一块。",
+  "board": {
+    "width": 1.0,
+    "height": 1.0,
+    "sample_resolution": 128
+  },
+  "light_presets": [
+    {
+      "id": "center",
+      "position": [0.50, 0.15],
+      "height": 3.0
+    }
+  ],
+  "active_light_preset": "center",
+  "light_moves_count": true,
+  "target_shapes": [
+    [
+      [0.26, 0.474],
+      [0.38, 0.474],
+      [0.38, 0.594],
+      [0.74, 0.594],
+      [0.74, 0.714],
+      [0.26, 0.714]
+    ],
+    [
+      [0.24, 0.396],
+      [0.48, 0.396],
+      [0.36, 0.204]
+    ]
+  ],
+  "objects": [
+    {
+      "id": "ell_fixed",
+      "shape": [
+        [-0.1, -0.1],
+        [0.0, -0.1],
+        [0.0, 0.0],
+        [0.3, 0.0],
+        [0.3, 0.1],
+        [-0.1, 0.1]
+      ],
+      "height": 0.5,
+      "position": [0.4, 0.52],
+      "rotation_deg": 0,
+      "movable": false,
+      "rotatable": false
+    },
+    {
+      "id": "tri_11",
+      "shape": [
+        [-0.1, 0.08],
+        [0.1, 0.08],
+        [0.0, -0.08]
+      ],
+      "height": 0.5,
+      "position": [0.75, 0.2],
+      "rotation_deg": 0,
+      "movable": true,
+      "rotatable": false
+    }
+  ],
+  "par_moves": 1,
+  "golden_solution": {
+    "light_preset": "center",
+    "objects": [
+      {
+        "id": "ell_fixed",
+        "position": [0.4, 0.52],
+        "rotation_deg": 0
+      },
+      {
+        "id": "tri_11",
+        "position": [0.383333, 0.275],
+        "rotation_deg": 0
+      }
+    ]
+  },
+  "win_threshold": {
+    "precision": 0.90,
+    "recall": 0.92,
+    "edge_tolerance": 4.5,
+    "snap_distance": 8.0
+  },
+  "hints": [
+    "桌上带方框标记的那块是固定的，拖不动。",
+    "把三角形拖到投影板上方那个位置就行。"
+  ]
+}

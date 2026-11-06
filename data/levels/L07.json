@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "level_id": "L07",
+  "chapter_id": "CH02",
+  "title": "三笔成字",
+  "description": "三块影子要叠成同一个方向。左边对齐，中间那条短一截。",
+  "board": {
+    "width": 1.0,
+    "height": 1.0,
+    "sample_resolution": 128
+  },
+  "light_presets": [
+    {
+      "id": "center",
+      "position": [0.50, 0.15],
+      "height": 3.0
+    }
+  ],
+  "active_light_preset": "center",
+  "light_moves_count": true,
+  "target_shapes": [
+    [
+      [0.34, 0.206],
+      [0.58, 0.206],
+      [0.58, 0.314],
+      [0.34, 0.314]
+    ],
+    [
+      [0.34, 0.446],
+      [0.50, 0.446],
+      [0.50, 0.554],
+      [0.34, 0.554]
+    ],
+    [
+      [0.34, 0.686],
+      [0.58, 0.686],
+      [0.58, 0.794],
+      [0.34, 0.794]
+    ]
+  ],
+  "objects": [
+    {
+      "id": "bar_top",
+      "shape": [
+        [-0.1, -0.045],
+        [0.1, -0.045],
+        [0.1, 0.045],
+        [-0.1, 0.045]
+      ],
+      "height": 0.5,
+      "position": [0.3, 0.3],
+      "rotation_deg": 0,
+      "movable": true,
+      "rotatable": false
+    },
+    {
+      "id": "bar_mid",
+      "shape": [
+        [-0.066667, -0.045],
+        [0.066667, -0.045],
+        [0.066667, 0.045],
+        [-0.066667, 0.045]
+      ],
+      "height": 0.5,
+      "position": [0.55, 0.55],
+      "rotation_deg": 0,
+      "movable": true,
+      "rotatable": false
+    },
+    {
+      "id": "bar_bottom",
+      "shape": [
+        [-0.1, -0.045],
+        [0.1, -0.045],
+        [0.1, 0.045],
+        [-0.1, 0.045]
+      ],
+      "height": 0.5,
+      "position": [0.35, 0.75],
+      "rotation_deg": 0,
+      "movable": true,
+      "rotatable": false
+    }
+  ],
+  "par_moves": 3,
+  "golden_solution": {
+    "light_preset": "center",
+    "objects": [
+      {
+        "id": "bar_top",
+        "position": [0.466667, 0.241667],
+        "rotation_deg": 0
+      },
+      {
+        "id": "bar_mid",
+        "position": [0.433333, 0.441667],
+        "rotation_deg": 0
+      },
+      {
+        "id": "bar_bottom",
+        "position": [0.466667, 0.641667],
+        "rotation_deg": 0
+      }
+    ]
+  },
+  "win_threshold": {
+    "precision": 0.90,
+    "recall": 0.92,
+    "edge_tolerance": 4.5,
+    "snap_distance": 8.0
+  },
+  "hints": [
+    "三块影子都要左端对齐，中间那块短一些。",
+    "一块一块来，每次拖到位再动下一块。"
+  ]
+}

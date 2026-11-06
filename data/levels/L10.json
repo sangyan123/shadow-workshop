@@ -1,0 +1,154 @@
+{
+  "schema_version": 1,
+  "level_id": "L10",
+  "chapter_id": "CH02",
+  "title": "叠在一起",
+  "description": "两段影子错开摆，中间要压住一点。叠上的地方只算一次。",
+  "board": {
+    "width": 1.0,
+    "height": 1.0,
+    "sample_resolution": 128
+  },
+  "light_presets": [
+    {
+      "id": "center",
+      "position": [
+        0.5,
+        0.15
+      ],
+      "height": 3.0
+    }
+  ],
+  "active_light_preset": "center",
+  "light_moves_count": true,
+  "target_shapes": [
+    [
+      [
+        0.23,
+        0.6
+      ],
+      [
+        0.45,
+        0.6
+      ],
+      [
+        0.45,
+        0.72
+      ],
+      [
+        0.23,
+        0.72
+      ]
+    ],
+    [
+      [
+        0.37,
+        0.46
+      ],
+      [
+        0.59,
+        0.46
+      ],
+      [
+        0.59,
+        0.64
+      ],
+      [
+        0.37,
+        0.64
+      ]
+    ]
+  ],
+  "objects": [
+    {
+      "id": "band_low",
+      "shape": [
+        [
+          -0.091667,
+          -0.05
+        ],
+        [
+          0.091667,
+          -0.05
+        ],
+        [
+          0.091667,
+          0.05
+        ],
+        [
+          -0.091667,
+          0.05
+        ]
+      ],
+      "height": 0.5,
+      "position": [
+        0.25,
+        0.72
+      ],
+      "rotation_deg": 0,
+      "movable": true,
+      "rotatable": false
+    },
+    {
+      "id": "band_high",
+      "shape": [
+        [
+          -0.091667,
+          -0.075
+        ],
+        [
+          0.091667,
+          -0.075
+        ],
+        [
+          0.091667,
+          0.075
+        ],
+        [
+          -0.091667,
+          0.075
+        ]
+      ],
+      "height": 0.5,
+      "position": [
+        0.72,
+        0.32
+      ],
+      "rotation_deg": 0,
+      "movable": true,
+      "rotatable": false
+    }
+  ],
+  "par_moves": 2,
+  "golden_solution": {
+    "light_preset": "center",
+    "objects": [
+      {
+        "id": "band_low",
+        "position": [
+          0.366667,
+          0.575
+        ],
+        "rotation_deg": 0
+      },
+      {
+        "id": "band_high",
+        "position": [
+          0.483333,
+          0.483333
+        ],
+        "rotation_deg": 0
+      }
+    ]
+  },
+  "win_threshold": {
+    "precision": 0.9,
+    "recall": 0.92,
+    "edge_tolerance": 3.0,
+    "snap_distance": 8.0
+  },
+  "hints": [
+    "两块影子不用完全分开，中间叠上一点也允许。",
+    "重叠的区域只算一次，不会重复计入。"
+  ]
+}

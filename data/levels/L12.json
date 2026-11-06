@@ -1,0 +1,170 @@
+{
+  "schema_version": 1,
+  "level_id": "L12",
+  "chapter_id": "CH02",
+  "title": "关灯之前",
+  "description": "灯要换，角度也要转。两件事都对了才算。",
+  "board": {
+    "width": 1.0,
+    "height": 1.0,
+    "sample_resolution": 128
+  },
+  "light_presets": [
+    {
+      "id": "center",
+      "position": [
+        0.5,
+        0.15
+      ],
+      "height": 3.0
+    },
+    {
+      "id": "side",
+      "position": [
+        0.18,
+        0.5
+      ],
+      "height": 1.8
+    }
+  ],
+  "active_light_preset": "center",
+  "light_moves_count": false,
+  "target_shapes": [
+    [
+      [
+        0.34615,
+        0.25077
+      ],
+      [
+        0.48461,
+        0.25077
+      ],
+      [
+        0.48461,
+        0.38923
+      ],
+      [
+        0.9,
+        0.38923
+      ],
+      [
+        0.9,
+        0.52769
+      ],
+      [
+        0.34615,
+        0.52769
+      ]
+    ],
+    [
+      [
+        0.101255,
+        0.628233
+      ],
+      [
+        0.580897,
+        0.90514
+      ],
+      [
+        0.738745,
+        0.631767
+      ]
+    ]
+  ],
+  "objects": [
+    {
+      "id": "ell_fixed",
+      "shape": [
+        [
+          -0.1,
+          -0.1
+        ],
+        [
+          0.0,
+          -0.1
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.3,
+          0.0
+        ],
+        [
+          0.3,
+          0.1
+        ],
+        [
+          -0.1,
+          0.1
+        ]
+      ],
+      "height": 0.5,
+      "position": [
+        0.4,
+        0.42
+      ],
+      "rotation_deg": 0,
+      "movable": false,
+      "rotatable": false
+    },
+    {
+      "id": "tri_12",
+      "shape": [
+        [
+          -0.2,
+          0.114
+        ],
+        [
+          0.2,
+          0.114
+        ],
+        [
+          0.2,
+          -0.114
+        ]
+      ],
+      "height": 0.5,
+      "position": [
+        0.52,
+        0.62
+      ],
+      "rotation_deg": 0,
+      "movable": true,
+      "rotatable": true
+    }
+  ],
+  "par_moves": 2,
+  "golden_solution": {
+    "light_preset": "side",
+    "objects": [
+      {
+        "id": "ell_fixed",
+        "position": [
+          0.4,
+          0.42
+        ],
+        "rotation_deg": 0
+      },
+      {
+        "id": "tri_12",
+        "position": [
+          0.35333,
+          0.59389
+        ],
+        "rotation_deg": 30
+      }
+    ]
+  },
+  "win_threshold": {
+    "precision": 0.9,
+    "recall": 0.92,
+    "edge_tolerance": 4.5,
+    "snap_distance": 8.0
+  },
+  "hints": [
+    "先点「切换灯位」，让光从侧面上来。",
+    "再点住三角形，顺转一次，然后拖到位。"
+  ]
+}
