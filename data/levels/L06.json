@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "level_id": "L06",
+  "chapter_id": "CH01",
+  "title": "两个方向",
+  "description": "两块形状一样，但一块往左歪、一块往右歪。",
+  "board": {
+    "width": 1.0,
+    "height": 1.0,
+    "sample_resolution": 128
+  },
+  "light_presets": [
+    {
+      "id": "center",
+      "position": [0.50, 0.15],
+      "height": 3.0
+    }
+  ],
+  "active_light_preset": "center",
+  "light_moves_count": true,
+  "target_shapes": [
+    [
+      [0.106508, 0.379138],
+      [0.397492, 0.547138],
+      [0.493492, 0.380862]
+    ],
+    [
+      [0.542508, 0.827138],
+      [0.833492, 0.659138],
+      [0.737492, 0.492862]
+    ]
+  ],
+  "objects": [
+    {
+      "id": "tri_06a",
+      "shape": [
+        [-0.14, 0.08],
+        [0.14, 0.08],
+        [0.14, -0.08]
+      ],
+      "height": 0.5,
+      "position": [0.25, 0.50],
+      "rotation_deg": 0,
+      "movable": true,
+      "rotatable": true
+    },
+    {
+      "id": "tri_06b",
+      "shape": [
+        [-0.14, 0.08],
+        [0.14, 0.08],
+        [0.14, -0.08]
+      ],
+      "height": 0.5,
+      "position": [0.72, 0.35],
+      "rotation_deg": 0,
+      "movable": true,
+      "rotatable": true
+    }
+  ],
+  "par_moves": 4,
+  "golden_solution": {
+    "light_preset": "center",
+    "objects": [
+      {
+        "id": "tri_06a",
+        "position": [0.333333, 0.341667],
+        "rotation_deg": 30
+      },
+      {
+        "id": "tri_06b",
+        "position": [0.616667, 0.575],
+        "rotation_deg": 330
+      }
+    ]
+  },
+  "win_threshold": {
+    "precision": 0.90,
+    "recall": 0.92,
+    "edge_tolerance": 3.0,
+    "snap_distance": 8.0
+  },
+  "hints": [
+    "两块形状一样，但一块顺转、一块逆转，方向别搞反。",
+    "各转一次、各拖一次，四步之内可以拿满星。"
+  ]
+}

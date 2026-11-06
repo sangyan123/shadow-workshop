@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "level_id": "L05",
+  "chapter_id": "CH01",
+  "title": "一次到位",
+  "description": "先转对角度，再拖到位。步数越少，星星越多。",
+  "board": {
+    "width": 1.0,
+    "height": 1.0,
+    "sample_resolution": 128
+  },
+  "light_presets": [
+    {
+      "id": "center",
+      "position": [0.50, 0.15],
+      "height": 3.0
+    }
+  ],
+  "active_light_preset": "center",
+  "light_moves_count": true,
+  "target_shapes": [
+    [
+      [0.368077, 0.483138],
+      [0.575923, 0.603138],
+      [0.568, 0.376862]
+    ]
+  ],
+  "objects": [
+    {
+      "id": "tri_05",
+      "shape": [
+        [-0.1, 0.08],
+        [0.1, 0.08],
+        [0.0, -0.08]
+      ],
+      "height": 0.5,
+      "position": [0.42, 0.48],
+      "rotation_deg": 0,
+      "movable": true,
+      "rotatable": true
+    }
+  ],
+  "par_moves": 2,
+  "golden_solution": {
+    "light_preset": "center",
+    "objects": [
+      {
+        "id": "tri_05",
+        "position": [0.516667, 0.408333],
+        "rotation_deg": 30
+      }
+    ]
+  },
+  "win_threshold": {
+    "precision": 0.90,
+    "recall": 0.92,
+    "edge_tolerance": 4.5,
+    "snap_distance": 8.0
+  },
+  "hints": [
+    "点住桌面上的三角形，用「逆转 / 顺转」把角度调对。",
+    "角度对了再拖位置，两步之内就能拿满星。"
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "level_id": "L03",
+  "chapter_id": "CH01",
+  "title": "两个影子碰头",
+  "description": "两块影子要拼成一个沙漏。两个都得拖到位。",
+  "board": {
+    "width": 1.0,
+    "height": 1.0,
+    "sample_resolution": 128
+  },
+  "light_presets": [
+    {
+      "id": "center",
+      "position": [0.50, 0.15],
+      "height": 3.0
+    }
+  ],
+  "active_light_preset": "center",
+  "light_moves_count": true,
+  "target_shapes": [
+    [
+      [0.62, 0.308],
+      [0.38, 0.308],
+      [0.5, 0.5]
+    ],
+    [
+      [0.38, 0.692],
+      [0.62, 0.692],
+      [0.5, 0.5]
+    ]
+  ],
+  "objects": [
+    {
+      "id": "tri_top",
+      "shape": [
+        [-0.1, 0.08],
+        [0.1, 0.08],
+        [0.0, -0.08]
+      ],
+      "height": 0.5,
+      "position": [0.36, 0.38],
+      "rotation_deg": 180,
+      "movable": true,
+      "rotatable": false
+    },
+    {
+      "id": "tri_bottom",
+      "shape": [
+        [-0.1, 0.08],
+        [0.1, 0.08],
+        [0.0, -0.08]
+      ],
+      "height": 0.5,
+      "position": [0.64, 0.50],
+      "rotation_deg": 0,
+      "movable": true,
+      "rotatable": false
+    }
+  ],
+  "par_moves": 2,
+  "golden_solution": {
+    "light_preset": "center",
+    "objects": [
+      {
+        "id": "tri_top",
+        "position": [0.5, 0.361667],
+        "rotation_deg": 180
+      },
+      {
+        "id": "tri_bottom",
+        "position": [0.5, 0.521667],
+        "rotation_deg": 0
+      }
+    ]
+  },
+  "win_threshold": {
+    "precision": 0.90,
+    "recall": 0.92,
+    "edge_tolerance": 4.5,
+    "snap_distance": 8.0
+  },
+  "hints": [
+    "两个影子都要拖到投影板中间，让尖端对在一起。",
+    "上面那个倒三角往下挪，下面那个正三角往上挪。"
+  ]
+}

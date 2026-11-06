@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "level_id": "L04",
+  "chapter_id": "CH01",
+  "title": "拼成一个框",
+  "description": "两块 L 形影子合起来是一个方框，中间要留出空隙。",
+  "board": {
+    "width": 1.0,
+    "height": 1.0,
+    "sample_resolution": 128
+  },
+  "light_presets": [
+    {
+      "id": "center",
+      "position": [0.50, 0.15],
+      "height": 3.0
+    }
+  ],
+  "active_light_preset": "center",
+  "light_moves_count": true,
+  "target_shapes": [
+    [
+      [0.26, 0.50],
+      [0.38, 0.50],
+      [0.38, 0.62],
+      [0.74, 0.62],
+      [0.74, 0.74],
+      [0.26, 0.74]
+    ],
+    [
+      [0.74, 0.50],
+      [0.62, 0.50],
+      [0.62, 0.38],
+      [0.26, 0.38],
+      [0.26, 0.26],
+      [0.74, 0.26]
+    ]
+  ],
+  "objects": [
+    {
+      "id": "ell_bottom",
+      "shape": [
+        [-0.1, -0.1],
+        [0.0, -0.1],
+        [0.0, 0.0],
+        [0.3, 0.0],
+        [0.3, 0.1],
+        [-0.1, 0.1]
+      ],
+      "height": 0.5,
+      "position": [0.26, 0.68],
+      "rotation_deg": 0,
+      "movable": true,
+      "rotatable": false
+    },
+    {
+      "id": "ell_top",
+      "shape": [
+        [-0.1, -0.1],
+        [0.0, -0.1],
+        [0.0, 0.0],
+        [0.3, 0.0],
+        [0.3, 0.1],
+        [-0.1, 0.1]
+      ],
+      "height": 0.5,
+      "position": [0.74, 0.26],
+      "rotation_deg": 180,
+      "movable": true,
+      "rotatable": false
+    }
+  ],
+  "par_moves": 2,
+  "golden_solution": {
+    "light_preset": "center",
+    "objects": [
+      {
+        "id": "ell_bottom",
+        "position": [0.4, 0.541667],
+        "rotation_deg": 0
+      },
+      {
+        "id": "ell_top",
+        "position": [0.6, 0.341667],
+        "rotation_deg": 180
+      }
+    ]
+  },
+  "win_threshold": {
+    "precision": 0.90,
+    "recall": 0.92,
+    "edge_tolerance": 4.5,
+    "snap_distance": 8.0
+  },
+  "hints": [
+    "两块影子各是方框的一半，要拼成一个完整的框才算。",
+    "左下那块往右上挪一点，右上那块往左下挪一点。"
+  ]
+}

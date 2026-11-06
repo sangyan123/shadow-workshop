@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "level_id": "L02",
+  "chapter_id": "CH01",
+  "title": "斜着的影子",
+  "description": "影子歪了。先点住桌上的长条选中它，再点「旋转 30°」。",
+  "board": {
+    "width": 1.0,
+    "height": 1.0,
+    "sample_resolution": 128
+  },
+  "light_presets": [
+    {
+      "id": "center",
+      "position": [0.50, 0.15],
+      "height": 3.0
+    }
+  ],
+  "active_light_preset": "center",
+  "light_moves_count": true,
+  "target_shapes": [
+    [
+      [0.575885, 0.358039],
+      [0.635885, 0.461962],
+      [0.324115, 0.641962],
+      [0.264115, 0.538039]
+    ]
+  ],
+  "objects": [
+    {
+      "id": "bar_01",
+      "shape": [
+        [-0.05, -0.15],
+        [0.05, -0.15],
+        [0.05, 0.15],
+        [-0.05, 0.15]
+      ],
+      "height": 0.5,
+      "position": [0.458333, 0.441667],
+      "rotation_deg": 0,
+      "movable": true,
+      "rotatable": true
+    }
+  ],
+  "par_moves": 2,
+  "golden_solution": {
+    "light_preset": "center",
+    "objects": [
+      {
+        "id": "bar_01",
+        "position": [0.458333, 0.441667],
+        "rotation_deg": 60
+      }
+    ]
+  },
+  "win_threshold": {
+    "precision": 0.90,
+    "recall": 0.92,
+    "edge_tolerance": 4.5,
+    "snap_distance": 8.0
+  },
+  "hints": [
+    "点住桌面上的长条，选中后点「旋转 30°」。",
+    "影子要斜到和浅色轮廓一样的方向，大约转两次。"
+  ]
+}

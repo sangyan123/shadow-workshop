@@ -40,12 +40,24 @@
     }
   ],
   "par_moves": 1,
+  "golden_solution": {
+    "light_preset": "center",
+    "objects": [
+      {
+        "id": "triangle_01",
+        "position": [0.40, 0.70],
+        "rotation_deg": 0
+      }
+    ]
+  },
   "win_threshold": {
     "precision": 0.90,
-    "recall": 0.92
+    "recall": 0.92,
+    "edge_tolerance": 4.5,
+    "snap_distance": 8.0
   },
   "hints": [
-    "目标轮廓是一个三角形。",
-    "把桌上的三角形拖到左下方试试。"
+    "点住桌面的三角形拖动；投影板上的影子也可以直接拖。",
+    "把影子拖到浅色三角上，再点「检查影子」。"
   ]
 }
