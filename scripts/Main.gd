@@ -42,7 +42,14 @@ func _open_level(index: int) -> void:
 
 	level_node = level_scene.instantiate() as Control
 	level_node.set("level_path", LEVEL_PATHS[current_level_index])
+	level_node.set("has_next_level", current_level_index < LEVEL_PATHS.size() - 1)
+	level_node.connect("next_level_requested", _on_next_level_requested)
 	add_child(level_node)
+
+
+func _on_next_level_requested() -> void:
+	# 延迟一帧再切换，避免在信号回调里销毁信号的发送者
+	call_deferred("_open_level", current_level_index + 1)
 
 
 func _unhandled_input(event: InputEvent) -> void:

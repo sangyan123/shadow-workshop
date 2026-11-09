@@ -1,6 +1,9 @@
 extends Control
 
+signal next_level_requested
+
 @export var level_path: String = "res://data/levels/L01.json"
+@export var has_next_level: bool = true
 
 const BOARD_RECT: Rect2 = Rect2(70, 170, 580, 520)
 const DESK_RECT: Rect2 = Rect2(60, 760, 600, 310)
@@ -478,6 +481,13 @@ func _on_reset_pressed() -> void:
 
 
 func _on_check_pressed() -> void:
+	if has_won:
+		if has_next_level:
+			next_level_requested.emit()
+		else:
+			_reset_level()
+		return
+
 	var metrics: Dictionary = _calculate_match()
 	var precision: float = float(metrics["precision"])
 	var recall: float = float(metrics["recall"])
@@ -766,6 +776,11 @@ func _update_labels() -> void:
 		if not bool(selected_object.get("movable", false)):
 			drag_state = "    （这块是固定的，动不了）"
 	status_label.text = "步数：%d    建议步数：%d%s" % [steps, par_moves, drag_state]
+
+	if has_won:
+		check_button.text = "下一关" if has_next_level else "重玩本关"
+	else:
+		check_button.text = "检查影子"
 
 	if hints.is_empty():
 		hint_label.text = "提示：观察目标轮廓的方向和位置。"
